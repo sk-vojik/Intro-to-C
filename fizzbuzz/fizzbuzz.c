@@ -10,21 +10,28 @@
 */
 int fizzbuzz(int n)
 {
-  int counter = 0;
-
-  while (n < counter) {
-    if (n % 15 == 0) {
-      printf("FizzBuzz");
-      counter++;
-    } else if (n % 5 == 0) {
-      printf("Buzz");
-      counter++;
-    } else if (n % 3 == 0) {
-      printf("Fizz");
-      counter++;
-    } else 
-      printf("The counter is currently at %d\n", counter);
-  }
+    int counter = 0;
+    for (int i = 0; i < n; i++)
+    {
+      if (i % 15 == 0)
+      {
+        printf("FizzBuzz\n");
+      }
+      else if (i % 3 == 0)
+      {
+        printf("Fizz\n");
+      }
+      else if (i % 5 == 0)
+      {
+        printf("Buzz\n");
+      }
+      else
+      {
+        printf("The counter value is %d\n", counter);
+        counter++;
+      }
+    }
+    return counter;
 }
 
 #ifndef TESTING
